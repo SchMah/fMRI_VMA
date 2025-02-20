@@ -1,11 +1,11 @@
 clear all;
-addpath(genpath('\\lcc-na-b2-wisslan-01.med.uni-goettingen.de\kneu\KNEUR-1\Projects\Shirin-Backup\PhD_project_Shirin\fMRI-MotorAdaptation_project\code\Analysis\Behavioral\Matlab'))
+addpath(genpath(''))
 %% settings
 set(0,'defaultAxesFontSize',12)
 set(0, 'DefaultAxesFontWeight','normal')
 set(0,'defaultAxesFontName','Calibri')
 %% ------------------------------ Load adaptation data ----------------------------
-group_dir = '\\lcc-na-b2-wisslan-01.med.uni-goettingen.de\kneu\KNEUR-1\Projects\Shirin-Backup\PhD_project_Shirin\fMRI-MotorAdaptation_project\code\Analysis\Behavioral\Matlab'
+group_dir = ''
 % load table where all datapoints are stored
 load(fullfile(group_dir,'T_Group.mat'));
 % shift hand angles to a common axis
@@ -109,7 +109,7 @@ box off;
 %% save data for analysis in R (This has to be run only one time)
 % % % to obtain imposed rotation structure, load one of params file from a
 % % % subject's folder
-% % load('\\lcc-na-b2-wisslan-01.med.uni-goettingen.de\kneu\KNEUR-1\Projects\Shirin-Backup\PhD_project_Shirin\fMRI-MotorAdaptation_project\rawData\BehavioralData\session2_main_task\S01-2\S01-2_20230208_115234_params.mat')
+% % load('')
 % % params.Rot_Deg
 % % rotation_trials = reshape(params.Rot_Deg', 1, [])';
 % % trial_number = repmat([1:15],1, 19)';
@@ -355,7 +355,7 @@ bar(mean((mov_block),1,'omitnan'),'FaceColor',color_code,'EdgeColor','none','bar
 hold on
 errorbar(1:1:19, mean(mov_block,1,'omitnan'),nanstderr(mov_block,1,'omitnan'),'color',color_code,'linestyle', 'none','LineWidth',1.5)
 xlabel('Block Number ');
-ylabel('Variability(°)');
+ylabel('Variability(ï¿½)');
 set(gca,'XTick',[blocks_numb],'FontWeight','normal','FontSize',12,'XTickLabelRotation',45);
 title('Within-Subject Variability in Chosen Directions');
 set(gca, 'YMinorTick','off','XMinorTick','off','TickDir', 'out');
@@ -368,7 +368,7 @@ bar(std(mov_med_block,1,'omitnan'),'FaceColor',color_code,'EdgeColor','none','ba
 hold on
 errorbar(1:1:19, std(mov_med_block,1,'omitnan'),nanstderr(mov_med_block,1,'omitnan'),'color',color_code,'linestyle', 'none','LineWidth',1.5)
 xlabel('Block Number ');
-ylabel('Variability(°)');
+ylabel('Variability(ï¿½)');
 title('Between-Subject Variability in Chosen Directions');
 set(gca,'XTick',[blocks_numb],'FontWeight','normal','FontSize',12,'XTickLabelRotation',45);
 set(gca, 'YMinorTick','off','XMinorTick','off','TickDir', 'out');
@@ -407,7 +407,7 @@ total_counts = sum(hist_counts, 1);
 
 subplot(3,1,3)
 bar(bin_centers, total_counts,'FaceColor',color_code,'EdgeColor','none','barwidth',0.95);
-xlabel('Hand Angle (°)');
+xlabel('Hand Angle (ï¿½)');
 ylabel('Number of Trials');
 title('Distribution of Chosen Hand Angles Across All Subjects');
 xticks(bin_centers)
