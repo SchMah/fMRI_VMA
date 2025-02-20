@@ -10,7 +10,7 @@ library(openxlsx)
 library(singcar)
 library(gt)
 # Adaptation Analysis
-setwd('//lcc-na-b2-wisslan-01.med.uni-goettingen.de/kneu/KNEUR-1/Projects/Shirin-Backup/PhD_project_Shirin/fMRI-MotorAdaptation_project/code/Analysis/Behavioral/R/Behavioral Analysis/AdaptationBlocks/')
+setwd('')
 
 # ................... import data ........
 data_fMRI_adap <- read.table('data_fMRI_adap_Group.txt',header = TRUE)
