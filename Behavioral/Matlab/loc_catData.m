@@ -1,13 +1,13 @@
 clear all;
 close all;
-group_dir = 'C:\Users\mahdavi\Documents\MATLAB\fMRI_VMA_Experiment\fMRI_VMA_BehavioralData\fMRI_VMA_session2\Script'
+group_dir = ''
 if exist(fullfile(group_dir,'T_GLoc.mat'));
     load(fullfile(group_dir,'T_GLoc.mat'));
 else
     T_GLoc = [];
 end
 %% individual subjects 
-subj_dir = 'C:\Users\mahdavi\Documents\MATLAB\fMRI_VMA_Experiment\fMRI_VMA_BehavioralData\fMRI_VMA_session2\Data\S33-2n'
+subj_dir = ''
 subj_data = dir(fullfile(subj_dir,'*_Loc.mat'));
 load(fullfile(subj_data.folder,subj_data.name));
 
