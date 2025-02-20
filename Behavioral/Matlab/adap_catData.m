@@ -1,13 +1,13 @@
 % load/create group data
 clear all;
-group_dir = '\\lcc-na-b2-wisslan-01.med.uni-goettingen.de\kneu\KNEUR-1\Projects\Shirin-Backup\PhD_project_Shirin\fMRI-MotorAdaptation_project\code\Analysis\Behavioral\Matlab\Script'
+group_dir = '' 
 if exist(fullfile(group_dir,'T_Group.mat'));
     load(fullfile(group_dir,'T_Group.mat'));
 else
     T_Group = [];
 end
 %%  step 1- import data/individual subjects
-subj_dir = '\\lcc-na-b2-wisslan-01.med.uni-goettingen.de\kneu\KNEUR-1\Projects\Shirin-Backup\PhD_project_Shirin\fMRI-MotorAdaptation_project\rawData\BehavioralData\session2_main_task\S37-2n'
+subj_dir = ''
 subj_data = dir(fullfile(subj_dir,'*.mat'));
 load(fullfile(subj_data(1).folder,subj_data(1).name)); % make sure it is the correct
 %% call some parameters from experiment
