@@ -1,5 +1,5 @@
 clear all;
-group_dir = '\\lcc-na-b2-wisslan-01.med.uni-goettingen.de\kneu\KNEUR-1\Projects\Shirin-Backup\PhD_project_Shirin\fMRI-MotorAdaptation_project\code\Analysis\Behavioral\Matlab'
+group_dir = ''
 % load table where all datapoints are stored
 load(fullfile(group_dir,'T_Group.mat'));
 %% aesthetics
