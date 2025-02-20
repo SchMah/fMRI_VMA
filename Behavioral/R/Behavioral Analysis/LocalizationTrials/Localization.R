@@ -9,7 +9,7 @@ library(report)
 library(openxlsx)
 library(gt)
 # Localization directory
-setwd('//lcc-na-b2-wisslan-01.med.uni-goettingen.de/kneu/KNEUR-1/Projects/Shirin-Backup/PhD_project_Shirin/fMRI-MotorAdaptation_project/code/Analysis/Behavioral/R/Behavioral Analysis/LocalizationTrials/')
+setwd('')
 
 # ................... import data ........
 data_fMRI_Loc <- read.table('data_fMRI_Loc_Group.txt',header = TRUE)
