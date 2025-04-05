@@ -2,9 +2,12 @@
 
 ## 📖 Overview
 This project contains code, and analyses related to **fMRI_MotorAdaptation_project**. The folder structure is shown below.
-Due to privacy constraints associated with this project, the full project files and datasets are available upon request.
+Note: Due to privacy constraints associated with this project, the full project files and datasets are available upon request.
+
 ---
+
 ## 📁 Folder Structure 
+
 ```
 fMRI_MotorAdaptation_project/
 
